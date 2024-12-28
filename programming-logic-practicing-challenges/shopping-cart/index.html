@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./assets/styles/style.css">
+
+  <title>Shopping Cart</title>
+</head>
+
+<body>
+  <main class="main-content">
+    <div class="blue-graphic"></div>
+    <section class="add-product">
+      <h1 class="title">
+        Shopping <span class="blue-text">Cart</span>
+      </h1>
+
+      <form class="form">
+        <label class="field-group">
+          <span class="medium-blue-text">Product</span>
+          <select class="product-input" name="product" id="product">
+            <option value="Headphones - $100">Headphones - $100</option>
+            <option value="Smartphone - $1400">Smartphone - $1400</option>
+            <option value="Oculus VR - $5000">Oculus VR - $5000</option>
+          </select>
+        </label>
+
+        <section class="lower-section">
+          <label class="field-group">
+            <span class="medium-blue-text">Qty.</span>
+            <input class="quantity-input" id="quantity" type="number" placeholder="100">
+          </label>
+
+          <section class="buttons-wrapper">
+            <button onclick="addProduct()" type="button" class="form-button add-button">Add</button>
+            <button onclick="clearCart()" type="button" class="form-button clear-button">Clear</button>
+          </section>
+        </section>
+      </form>
+    </section>
+    <section class="cart">
+      <img src="./assets/images/gray-cart.svg" alt="Gray shopping cart image">
+
+      <div class="title-wrapper">
+        <img src="./assets/images/cart-icon.svg" alt="Cart icon">
+
+        <h2 class="cart__title">Products in Cart</h2>
+      </div>
+
+      <section class="cart__products" id="product-list">
+        <section class="cart__products__product">
+          <span class="blue-text">1x</span> Smartphone <span class="blue-text">$1400</span>
+        </section>
+      </section>
+
+      <div class="divider"></div>
+
+      <p class="cart__total">
+        Total: <span class="blue-text" id="total-value">$1400</span>
+      </p>
+    </section>
+  </main>
+
+  <script src="./scripts/app.js"></script>
+</body>
+
+</html>

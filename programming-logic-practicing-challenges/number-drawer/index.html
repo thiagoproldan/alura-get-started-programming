@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <title>Number Drawer</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container__content">
+            <div class="container__info">
+                <div class="container__text">
+                    <h1>Number<span class="container__text-blue"> Drawer</span></h1>
+
+                    <div class="container__field">
+                        <label class="text__paragraph">Quantity of numbers</label>
+                        <input class="container__input" id="quantity" type="number" min="1" title="Quantity of numbers" placeholder="Enter the quantity">
+                    </div>
+                    
+                    <div class="container__field">
+                        <label class="text__paragraph">From number</label>
+                        <input class="container__input" id="from" type="number" min="1" title="From number" placeholder="Enter the start number">
+                    </div>
+                    
+                    <div class="container__field">
+                        <label class="text__paragraph">To number</label>
+                        <input class="container__input" id="to" type="number" min="1" title="To number" placeholder="Enter the end number">
+                    </div>
+                </div>
+                
+                <div class="buttons container__buttons">
+                    <button onclick="drawNumbers()" id="btn-draw" class="container__button">Draw</button>
+                    <button onclick="reset()" id="btn-reset" class="container__button-disabled">Reset</button>
+                </div>
+
+                <div class="container__text" id="result">
+                    <label class="text__paragraph">Drawn numbers: none so far</label>
+                </div>
+            </div>
+
+            <img src="./assets/images/astronaut.png" alt="A person wearing an astronaut helmet" class="container__image-person" />
+        </div>
+    </div>
+
+    <script src="./scripts/app.js" defer></script>
+</body>
+
+</html>

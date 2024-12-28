@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 3</title>
+</head>
+<body>
+<p id="myParagraph">Original text</p>
+<button onclick="modifyContent()">Modify Content</button>
+
+<script>
+// 2 - Have an HTML element on the page (e.g., a paragraph) and use JavaScript to modify its content using the textContent property.
+
+function modifyContent() {
+    const paragraph = document.getElementById('myParagraph');
+    paragraph.textContent = 'New text modified dynamically!';
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 2</title>
+</head>
+<body>
+<form id="userForm">
+    <label for="nameField">Name:</label>
+    <input type="text" id="nameField" name="name">
+    
+    <label for="ageField">Age:</label>
+    <input type="text" id="ageField" name="age">
+
+    <button type="button" onclick="captureValues()">Capture Values</button>
+  
+  <div id='displayValues'><span>Your name and age will appear here.</span></div>
+</form>
+
+<script>
+// 1 - Create a simple form with input fields and use JavaScript to retrieve the values entered in the fields using the value property. Display the values in the console and on the screen.
+
+function captureValues() {
+    const name = document.getElementById('nameField').value;
+    const age = document.getElementById('ageField').value;
+
+    document.getElementById('displayValues').textContent = `Name: ${name}, Age: ${age}`;
+    console.log(`Name: ${name}, Age: ${age}`);
+}
+</script>
+</body>
+</html>

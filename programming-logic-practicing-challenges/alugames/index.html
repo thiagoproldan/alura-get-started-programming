@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluGames</title>
+    <link rel="stylesheet" href="./assets/styles/main.css">
+</head>
+
+<body class="body">
+    <main class="container main">
+        <img src="./assets/images/logo.svg" alt="AluGames Logo">
+        <section class="divisor">
+            <div class="divisor__line"></div>
+            <img src="./assets/images/fade_bar.svg" alt="Visual bar" class="divisor__bar">
+            <div class="divisor__line"></div>
+        </section>
+        <h1 class="page-title">Boardgame <span class="page-title__emphasis">Rental</span></h1>
+        <section class="dashboard">
+            <ul class="dashboard__items">
+                <li class="dashboard__items__item" id="game-1">
+                    <div class="dashboard__item__img">
+                        <img src="./assets/images/monopoly.png" alt="Monopoly game cover">
+                    </div>
+                    <p class="dashboard__item__name">Monopoly</p>
+                    <a onclick="changeStatus(1)" href="#" class="dashboard__item__button">Rent</a>
+                </li>
+                <li class="dashboard__items__item" id="game-2">
+                    <div class="dashboard__item__img">
+                        <img src="./assets/images/ticket_to_ride.png" alt="Ticket to Ride game cover">
+                    </div>
+                    <p class="dashboard__item__name">Ticket to Ride</p>
+                    <a onclick="changeStatus(2)" href="#" class="dashboard__item__button">Rent</a>
+                </li>
+                <li class="dashboard__items__item" id="game-3">
+                    <div class="dashboard__item__img dashboard__item__img--rented">
+                        <img src="./assets/images/takenoko.png" alt="Takenoko game cover">
+                    </div>
+                    <p class="dashboard__item__name">Takenoko</p>
+                    <a onclick="changeStatus(3)" href="#" class="dashboard__item__button dashboard__item__button--return">Return</a>
+                </li>
+            </ul>
+        </section>
+        <img src="./assets/images/hachuras.svg" alt="Visual hatching" class="hachuras">
+    </main>
+
+    <script src="./scripts/app.js"></script>
+</body>
+
+</html>
